@@ -27,7 +27,7 @@ public class User {
 
     private int id; //시퀀스, auto_increment
 
-    @Column(nullable = false, length = 30)
+    @Column(nullable = false, length = 30, unique = true)
     private String username; //아이디
 
     @Column(nullable = false, length = 100) // 123456 => 해쉬로변경해서 비밀번호 암호화 넉넉하게 공간줌
